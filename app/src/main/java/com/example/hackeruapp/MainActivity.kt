@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
     fun getName(): String{
-        var name:String = "Hanan avitan"
+        var name:String = "Hanan"
         name = "Hanan Avitan"
         return name
     }
