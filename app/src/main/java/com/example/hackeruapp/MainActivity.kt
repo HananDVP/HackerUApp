@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun getName(): String{
         var name:String = "Hanan"
-        name = "Hanan Avitan"
+        name = "Hanan Avitan menasjh"
         return name
     }
 
