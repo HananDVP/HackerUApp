@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun getName(): String{
+    private fun getName(): String{
         var name:String = "Hanan"
-        name = "Hanan Avitan menasjh"
+        name = "Hanan Avitan"
         return name
     }
 
