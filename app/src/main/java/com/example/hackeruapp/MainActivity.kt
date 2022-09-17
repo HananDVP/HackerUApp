@@ -3,6 +3,7 @@ package com.example.hackeruapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -10,15 +11,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    private fun getName(): String{
-        var name:String = "Hanan"
-        name = "Hanan Avitan"
+     fun getName(name:String): String{
+        var name = name
         return name
     }
 
-
     fun onButtonClick(view: View) {
         val textView: TextView = findViewById<TextView>(R.id.hello_text)
-        textView.text = "Hello ${ getName ()} How are you?"
+        val editText = getEditText()
+        textView.text = "Hello ${ getName (editText)}"
     }
+        fun getEditText(): String{
+            val editText: EditText = findViewById(R.id.edit_text_1)
+            return editText.text.toString()
+        }
+
 }
